@@ -7,7 +7,7 @@ const reportsRoute = require('./Report/app');
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
-app.use('/reports', reportsRoute); // Ruta de acceso a la API de reporte de incidentes
+app.use('/reports', reportsRoute); // Ruta de acceso a la API de reportes de incidentes
 
 var port = process.env.PORT || 3000;
 

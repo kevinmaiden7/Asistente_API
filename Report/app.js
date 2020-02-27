@@ -44,7 +44,6 @@ app.get('/', async function (req, res) {
 
 app.post('/', function (req, res) {
   let data = req.body;
-
   db.collection('reports').add(data)
     .then(() => {
       res.json({
