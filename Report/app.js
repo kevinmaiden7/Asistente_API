@@ -46,7 +46,7 @@ app.post('/', function (req, res) {
   let data = req.body;
   db.collection('reports').add(data)
     .then(() => {
-      res.json({
+      res.status(200).send({
           response: '200 OK'
         }
       );
